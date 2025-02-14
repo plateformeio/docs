@@ -1,0 +1,8 @@
+[plateforme]
+name = "operations"
+version = "0.1.0"
+description = "The missions example operations package"
+keywords = ["plateforme", "example", "missions", "operations"]
+
+[plateforme.package]
+api_services = false

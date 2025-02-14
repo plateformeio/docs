@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+  <!-- Update original styles -->
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/home.css' | url }}">
+  <!-- Include marketing styles -->
+  <link rel="stylesheet" href="{{ 'features/marketing-style.css' | url }}">
+{% endblock %}
+
+{% block tabs %}
+  {{ super() }}
+  <!-- Include marketing bundle -->
+  <div data-md-component="bundle" id="marketing-bundle">{% include "features/marketing-bundle.html" ignore missing %}</div>
+  <!-- Hydrate marketing bundle -->
+  <script type="module" src="{{ 'features/marketing-hydrate.js' | url }}"></script>
+{% endblock %}
+
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

@@ -1,0 +1,81 @@
+# --8<-- [start:get-rockets]
+GET http://127.0.0.1:8001/assets/rockets?.id=in~3,4 HTTP/1.1
+content-type: application/json
+
+{
+  "include": {
+    "__all__": {
+      "id": true,
+      "code": true,
+      "parts": {
+        "__all__": {
+          "id": true,
+          "material": {
+            "id": true,
+            "code": true
+          },
+          "quantity": true
+        }
+      }
+    }
+  }
+}
+
+# --8<-- [end:get-rockets]
+
+###
+
+# --8<-- [start:filter-crews]
+GET http://127.0.0.1:8001/staff/crews?.astronauts*.id=ge~1;le~15&sort=+name HTTP/1.1
+content-type: application/json
+
+{
+  "include": {
+    "__all__": {
+      "id": true,
+      "code": true,
+      "name": true,
+      "lead": true
+    }
+  }
+}
+
+# --8<-- [end:filter-crews]
+
+###
+
+# --8<-- [start:get-missions]
+GET http://127.0.0.1:8001/missions?sort=-id&page_size=10&page=2 HTTP/1.1
+content-type: application/json
+
+{
+  "filter": {
+    "id": "ge~1;le~30",
+    "crew.lead.id": "in~1,2,3"
+  },
+  "include": {
+    "__all__": {
+      "id": true,
+      "code": true,
+      "name": true,
+      "lead": true,
+      "crew": {
+        "id": true,
+        "code": true,
+        "lead": true
+      },
+      "rocket": {
+        "id": true,
+        "code": true
+      },
+      "station": {
+        "code": true,
+        "name": true,
+        "coordinates": true
+      },
+      "launch_date": true
+    }
+  }
+}
+
+# --8<-- [end:get-missions]

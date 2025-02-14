@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block outdated %}
+  You're not viewing the latest version.
+  <a href="{{ '../' ~ base_url }}">
+    <strong>Click here to go to latest.</strong>
+  </a>
+{% endblock %}
+
+{% block announce %}
+<a href="https://pypi.org/project/plateforme">
+  <span class="twemoji">
+    {% include ".icons/octicons/rocket-16.svg" %}
+  </span>
+  <strong> Alpha release is out !!</strong>
+</a>
+–
+<a href="https://x.com/plateformeio">
+  For updates follow <strong>@plateformeio</strong> on
+  <span class="twemoji">
+    {% include ".icons/fontawesome/brands/x-twitter.svg" %}
+  </span>
+</a>
+or
+<a href="https://github.com/sponsors/plateformeio">
+  sponsor the project on
+  <span class="twemoji">
+    {% include ".icons/fontawesome/brands/github.svg" %}
+  </span>
+</a>
+{% endblock %}
+
+{% set announce = self.announce() %}

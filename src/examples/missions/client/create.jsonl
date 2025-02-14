@@ -1,0 +1,20 @@
+// --8<-- [start:post-rockets]
+[
+  {
+    "id": null,
+    "type": "rocket",
+    "code": "SAT-V",
+    "name": "Saturn V",
+    "description": null,
+    "parts": []
+  },
+  {
+    "id": null,
+    "type": "rocket",
+    "code": "ARI-5",
+    "name": "Ariane 5",
+    "description": null,
+    "parts": []
+  }
+]
+// --8<-- [end:post-rockets]

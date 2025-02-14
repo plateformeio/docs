@@ -1,0 +1,10 @@
+// --8<-- [start:delete-rocket]
+{
+  "id": 85,
+  "type": "rocket",
+  "code": "ARI-6",
+  "name": "Ariane 6",
+  "description": "European launch vehicle.",
+  "parts": []
+}
+// --8<-- [end:delete-rocket]

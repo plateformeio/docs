@@ -1,0 +1,452 @@
+site_name: Plateforme Docs
+site_description: The modern Python ASGI Framework for data-driven Applications and Services
+site_author: Plateforme
+site_url: https://plateformeio.github.io/site
+copyright: Plateforme, All rights reserved
+
+repo_name: plateformeio/plateforme
+repo_url: https://github.com/plateformeio/plateforme
+edit_uri: blob/main/docs/
+
+docs_dir: docs
+site_dir: build
+
+nav:
+  - Overview: index.md
+  - Get started:
+      - start/index.md
+      - Installation: start/install.md
+      - First steps: start/first-steps.md
+      - Features: start/features.md
+      - Getting help: start/help.md
+      - Learn:
+          - learn/index.md
+          - Guides: learn/guides/index.md
+          - Concepts: learn/concepts/index.md
+      - Examples:
+          - examples/index.md
+          - Basic: examples/basic.md
+          # TODO: - Basic w/ associations: examples/basic-associations.md
+          # TODO: - Basic w/ database: examples/basic-database.md
+          # TODO: - Basic w/ inheritance: examples/basic-inheritance.md
+          # TODO: - Basic w/ packages: examples/basic-packages.md
+          - Basic w/ services: examples/basic-services.md
+          - Missions: examples/missions.md
+  - Learn:
+      - learn/index.md
+      - Guides:
+          - learn/guides/index.md
+          - Installing Python: learn/guides/install-python.md
+          - Creating a project: learn/guides/create-project.md
+          - Running an application: learn/guides/run-application.md
+          - Using a code editor: learn/guides/use-editor.md
+          - Using tools: learn/guides/use-tools.md
+          - Development: learn/guides/development.md
+          - Testing: learn/guides/testing.md
+      - Concepts:
+          - learn/concepts/index.md
+          - Resources: learn/concepts/resources.md
+          - Models: learn/concepts/models.md
+          - Fields: learn/concepts/fields.md
+          - Types: learn/concepts/types.md
+          - Associations: learn/concepts/associations.md
+          - Databases: learn/concepts/databases.md
+          - Queries: learn/concepts/queries.md
+          - Services: learn/concepts/services.md
+          - Routes: learn/concepts/routes.md
+          - Selectors: learn/concepts/selectors.md
+          - Applications: learn/concepts/applications.md
+          - Packages: learn/concepts/packages.md
+          - Namespaces: learn/concepts/namespaces.md
+          - Settings: learn/concepts/settings.md
+          - Environment: learn/concepts/environment.md
+          - Runtime: learn/concepts/runtime.md
+      - Examples:
+          - examples/index.md
+          - Basic: examples/basic.md
+          # TODO: - Basic w/ associations: examples/basic-associations.md
+          # TODO: - Basic w/ database: examples/basic-database.md
+          # TODO: - Basic w/ inheritance: examples/basic-inheritance.md
+          # TODO: - Basic w/ packages: examples/basic-packages.md
+          - Basic w/ services: examples/basic-services.md
+          - Missions: examples/missions.md
+  - Commands:
+      - commands/index.md
+      - Init: commands/init.md
+      - Install: commands/install.md
+      - Build: commands/build.md
+      - Clean: commands/clean.md
+      - Deploy: commands/deploy.md
+      - Drop: commands/drop.md
+      - Inspect: commands/inspect.md
+      - Migrate: commands/migrate.md
+      - Publish: commands/publish.md
+      - Run: commands/run.md
+      - Shell: commands/shell.md
+  - Reference:
+      - reference/index.md
+      - Core:
+          - reference/core/index.md
+          - Resources: reference/core/resources.md
+          - Associations: reference/core/associations.md
+          - Specifications: reference/core/specifications.md
+          - Services: reference/core/services.md
+          - Selectors: reference/core/selectors.md
+          - Applications: reference/core/applications.md
+          - Packages: reference/core/packages.md
+          - Namespaces: reference/core/namespaces.md
+          - Config: reference/core/config.md
+          - Settings: reference/core/settings.md
+          - Environment: reference/core/environment.md
+          - Runtime: reference/core/runtime.md
+          - Events: reference/core/events.md
+          - Miscellaneous: reference/core/miscellaneous.md
+      - Schema:
+          - reference/schema/index.md
+          - Models: reference/schema/models.md
+          - Fields: reference/schema/fields.md
+          - Aliases: reference/schema/aliases.md
+          - Miscellaneous: reference/schema/miscellaneous.md
+          - Core: reference/schema/core.md
+          - Decorators: reference/schema/decorators.md
+      - Database:
+          - reference/database/index.md
+          - Managers: reference/database/managers.md
+          - Routing: reference/database/routing.md
+          - Sessions: reference/database/sessions.md
+          - Bulk: reference/database/bulk.md
+          - Metadata: reference/database/metadata.md
+          - Types: reference/database/types.md
+          - Utilities: reference/database/utilities.md
+          - Engines: reference/database/engines.md
+          - Events: reference/database/events.md
+          - Expressions: reference/database/expressions.md
+          - ORM: reference/database/orm.md
+          - Pool: reference/database/pool.md
+      - API:
+          - reference/api/index.md
+          - Managers: reference/api/managers.md
+          - Routing: reference/api/routing.md
+          - Parameters: reference/api/parameters.md
+          - Dependencies: reference/api/dependencies.md
+          - Exceptions: reference/api/exceptions.md
+          - Middleware: reference/api/middleware.md
+          - I/O: reference/api/data.md
+          - Security: reference/api/security.md
+          - Status: reference/api/status.md
+      - Types:
+          - reference/types/index.md
+          - Extra: reference/types/extra.md
+  - About:
+      - Support: about/support.md
+      - Roadmap: about/roadmap.md
+      - Releases: about/releases.md
+      - Security: about/security.md
+      - License: about/license.md
+      - Community:
+          - People: about/community/people.md
+          - Insiders: about/community/insiders.md
+          - Discussions: about/community/discussions.md
+          - Contributing: about/community/contributing.md
+          - Covenant: about/community/covenant.md
+          - Issues: about/community/issues.md
+
+theme:
+  name: material
+  favicon: favicon.ico
+  icon:
+    logo: logo
+    repo: octicons/git-branch-24
+    search: octicons/search-24
+    share: octicons/share-24
+    tag:
+      draft: octicons/issue-draft-16
+      external: octicons/link-external-16
+      internal: octicons/lock-16
+      domain-api: octicons/apps-16
+      domain-cli: octicons/terminal-16
+      domain-core: octicons/cpu-16
+      domain-database: octicons/database-16
+      domain-schema: octicons/ai-model-16
+      domain-types: octicons/typography-16
+      repo: octicons/repo-16
+      repo-api: octicons/repo-16
+      repo-database: octicons/repo-16
+      repo-schema: octicons/repo-16
+  custom_dir: public
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.prefetch
+    - navigation.path
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+  palette:
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      toggle:
+        icon: octicons/moon-24
+        name: Switch to light preference
+      primary: custom
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      toggle:
+        icon: octicons/sun-24
+        name: Switch to system mode
+      primary: custom
+    - media: '(prefers-color-scheme)'
+      toggle:
+        icon: octicons/light-bulb-24
+        name: Switch to dark mode
+      primary: custom
+
+extra:
+  analytics:
+    provider: posthog
+    property: phc_t4Ui9gb6TFthIYxeqYOtT1v3zP71B3xRcc9qIsRAyIY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! You can submit a
+            <a href="https://github.com/plateformeio/docs" target="_blank" rel="noopener">pull request</a>
+            if you want to help us improve this page!
+  links:
+    home: https://plateforme.io
+    mail:
+      community: community@plateforme.io
+      contact: contact@plateforme.io
+      security: security@plateforme.io
+      sales: sales@plateforme.io
+      sponsors: sponsors@plateforme.io
+    repo:
+      core: https://github.com/plateformeio/plateforme
+      docs: https://github.com/plateformeio/docs
+    social:
+      discord: https://discord.com/channels/1339759418908217374
+      github: https://github.com/plateformeio
+      pypi: https://pypi.org/project/plateforme
+      reddit: https://www.reddit.com/r/plateformeio
+      x: https://x.com/plateformeio
+    sponsors: https://github.com/sponsors/plateformeio
+    stars: https://img.shields.io/github/stars/plateformeio/plateforme?style=social
+    index:
+      commands: commands
+      concepts: learn/concepts
+      contributing: about/community/contributing
+      covenant: about/community/covenant
+      discussions: about/community/discussions
+      features: start/features
+      guides: learn/guides
+      help: start/help
+      insiders: about/community/insiders
+      issues: about/community/issues
+      license: about/license
+      people: about/community/people
+      releases: about/releases
+      reference: reference
+      roadmap: about/roadmap
+      security: about/security
+      start: start
+      support: about/support
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/plateformeio
+      name: Plateforme on GitHub
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/plateforme
+      name: Plateforme on PyPI
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/plateformeio
+      name: Plateforme on 𝕏
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/plateformeio
+      name: Plateforme on Reddit
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/channels/1339759418908217374
+      name: Plateforme on Discord
+  tags:
+    Draft: draft
+    External: external
+    Internal: internal
+    API: domain-api
+    CLI: domain-cli
+    Core: domain-core
+    Database: domain-database
+    Schema: domain-schema
+    Types: domain-types
+    Plateforme: repo
+    FastAPI: repo-api
+    Pydantic: repo-schema
+    SQLAlchemy: repo-database
+    Starlette: repo-api
+  version:
+    default: latest
+    alias: true
+    provider: mike
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - reject
+
+extra_css:
+  - assets/stylesheets/palette.css
+  - assets/stylesheets/fonts.css
+  - assets/stylesheets/animations.css
+  - assets/stylesheets/layout.css
+  - assets/stylesheets/admonitions.css
+  - assets/stylesheets/tags.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - assets/javascripts/feedback.js
+  - assets/javascripts/header.js
+  - assets/javascripts/mermaid.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+hooks:
+  - scripts/sync.py
+  - scripts/watch.py
+
+plugins:
+  - macros
+  - meta
+  - mike:
+      alias_type: symlink
+      canonical_version: latest
+      deploy_prefix: docs
+  - mkdocstrings:
+      enabled: !ENV [PLUGINS_MKDOCSTRINGS, false]
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: auto
+            filters: ['!^_']
+            inherited_members: true
+            load_external_modules: true
+            members_order: source
+            merge_init_into_class: true
+            show_root_heading: true
+            show_signature_annotations: true
+            show_source: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            separate_signature: true
+            signature_crossrefs: true
+            docstring_options:
+              ignore_init_summary: true
+              method: style_order
+              style_order:
+                - google
+                - sphinx
+              default: google
+            extensions:
+              - griffe_autodocstringstyle
+              - griffe_sphinx
+            preload_modules:
+              - fastapi
+              - pydantic
+              - pydantic_core
+              - sqlalchemy
+              - starlette
+          import:
+            - url: https://docs.python.org/3/objects.inv
+              domains: [py, std]
+            - url: https://fastapi.tiangolo.com/objects.inv
+              domains: [py, std]
+            - url: https://docs.pydantic.dev/latest/objects.inv
+              domains: [py, std]
+            - url: https://docs.sqlalchemy.org/en/20/objects.inv
+              domains: [py, std]
+            - url: https://encode.github.io/starlette/objects.inv
+              domains: [py, std]
+  - optimize:
+      enabled: !ENV [PLUGINS_OPTIMIZE, false]
+  - search
+  - social
+  - tags:
+      listings_toc: false
+      shadow: false
+      shadow_on_serve: true
+      shadow_tags:
+        - Draft
+      tags_allowed: !!python/name:scripts.config.TAGS
+      tags_hierarchy: true
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      tags_sort_by: !!python/name:scripts.config.tag_name_index
+  - termynal:
+      prompt_literal_start:
+        - '$'
+  - typeset
+
+watch:
+  - docs
+  - public
+  - src

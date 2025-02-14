@@ -1,0 +1,46 @@
+<script>
+  var consent = __md_get('__consent');
+  if (consent) {
+    for (var input of document.forms.consent.elements) {
+      if (input.name) {
+        input.checked = consent[input.name] || !1;
+      }
+    }
+  } else if ('file:' !== location.protocol) {
+    const defaults = {};
+    for (var input of document.forms.consent.elements) {
+      if (input.name) {
+        input.checked = true;
+        defaults[input.name] = true;
+      }
+    }
+    __md_set('__consent', defaults);
+    setTimeout(function () {
+      document.querySelector('[data-md-component=consent]').hidden = !0;
+    }, 250);
+  }
+
+  const form = document.forms.consent;
+  for (var action of ['submit', 'reset']) {
+    form.addEventListener(action, function (event) {
+      event.preventDefault();
+      if ('reset' === event.type) {
+        for (var input of document.forms.consent.elements) {
+          if (input.name) {
+            input.checked = !1;
+          }
+        }
+      }
+      __md_set(
+        '__consent',
+        Object.fromEntries(
+          Array.from(new FormData(form).keys()).map(function (e) {
+            return [e, !0];
+          }),
+        ),
+      );
+      location.hash = '';
+      location.reload();
+    });
+  }
+</script>

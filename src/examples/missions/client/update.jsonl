@@ -1,0 +1,72 @@
+// --8<-- [start:patch-rockets]
+[
+  {
+    "id": 10,
+    "code": "4760719322",
+    "description": null
+  },
+  {
+    "id": 18,
+    "code": "3142734512",
+    "description": null
+  },
+  {
+    "id": 19,
+    "code": "7177675612",
+    "description": null
+  },
+  {
+    "id": 21,
+    "code": "9112122",
+    "description": null
+  },
+  {
+    "id": 68,
+    "code": "9010040722",
+    "description": null
+  },
+  {
+    "id": 79,
+    "code": "8145379582",
+    "description": null
+  }
+]
+// --8<-- [end:patch-rockets]
+// --8<-- [start:assign-lead]
+{
+  "id": 1,
+  "type": "crew",
+  "code": "881557580",
+  "name": "Base",
+  "astronauts": [
+    {
+      "id": 2,
+      "type": "astronaut",
+      "code": "8685543559",
+      "name": "Brandon Rodriguez",
+      "role": "engineer"
+    },
+    {
+      "id": 4,
+      "type": "astronaut",
+      "code": "9889304965",
+      "name": "Linda Fernandez",
+      "role": "pilot"
+    },
+    {
+      "id": 3,
+      "type": "astronaut",
+      "code": "5054931889",
+      "name": "Jack Rogers",
+      "role": "technician"
+    }
+  ],
+  "lead": {
+    "id": 2,
+    "type": "astronaut",
+    "code": "8685543559",
+    "name": "Brandon Rodriguez",
+    "role": "engineer"
+  }
+}
+// --8<-- [end:assign-lead]

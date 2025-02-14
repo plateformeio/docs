@@ -1,0 +1,9 @@
+# --8<-- [start:delete-rocket]
+DELETE http://127.0.0.1:8001/assets/rockets/85 HTTP/1.1
+content-type: application/json
+
+{
+  "return_result": true
+}
+
+# --8<-- [end:delete-rocket]

@@ -1,0 +1,216 @@
+// --8<-- [start:get-rockets]
+[
+  {
+    "id": 3,
+    "code": "9506131347",
+    "parts": [
+      {
+        "id": 21,
+        "material": {
+          "id": 17,
+          "code": "9627606784"
+        },
+        "quantity": 5
+      },
+      {
+        "id": 20,
+        "material": {
+          "id": 23,
+          "code": "9070371458"
+        },
+        "quantity": 9
+      },
+      {
+        "id": 19,
+        "material": {
+          "id": 27,
+          "code": "1926426509"
+        },
+        "quantity": 2
+      },
+      {
+        "id": 15,
+        "material": {
+          "id": 30,
+          "code": "9128315132"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 17,
+        "material": {
+          "id": 42,
+          "code": "5479104904"
+        },
+        "quantity": 4
+      },
+      {
+        "id": 16,
+        "material": {
+          "id": 49,
+          "code": "9598485656"
+        },
+        "quantity": 7
+      },
+      {
+        "id": 18,
+        "material": {
+          "id": 51,
+          "code": "4039707946"
+        },
+        "quantity": 7
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "code": "2734370508",
+    "parts": [
+      {
+        "id": 22,
+        "material": {
+          "id": 6,
+          "code": "2587569535"
+        },
+        "quantity": 4
+      }
+    ]
+  }
+]
+// --8<-- [end:get-rockets]
+// --8<-- [start:filter-crews]
+[
+  {
+    "id": 1,
+    "code": "881557580",
+    "name": "Base",
+    "lead": {
+      "id": 2,
+      "type": "astronaut",
+      "code": "8685543559",
+      "name": "Brandon Rodriguez",
+      "role": "engineer"
+    }
+  },
+  {
+    "id": 2,
+    "code": "5167989951",
+    "name": "Serious",
+    "lead": {
+      "id": 7,
+      "type": "astronaut",
+      "code": "3717936433",
+      "name": "Joshua Santos",
+      "role": "technician"
+    }
+  }
+]
+// --8<-- [end:filter-crews]
+// --8<-- [start:get-missions]
+[
+  {
+    "id": 6,
+    "code": "2993145882",
+    "name": "Central",
+    "crew": {
+      "id": 1,
+      "code": "881557580",
+      "lead": {
+        "id": 2,
+        "type": "astronaut",
+        "code": "8685543559",
+        "name": "Brandon Rodriguez",
+        "role": "engineer"
+      }
+    },
+    "rocket": {
+      "id": 38,
+      "code": "4545618943"
+    },
+    "station": {
+      "code": "4183126061",
+      "name": "Matthewburgh",
+      "coordinates": "('33.7207', '-116.21677')"
+    },
+    "launch_date": "2022-11-27"
+  },
+  {
+    "id": 5,
+    "code": "2725533067",
+    "name": "Cultural",
+    "crew": {
+      "id": 1,
+      "code": "881557580",
+      "lead": {
+        "id": 2,
+        "type": "astronaut",
+        "code": "8685543559",
+        "name": "Brandon Rodriguez",
+        "role": "engineer"
+      }
+    },
+    "rocket": {
+      "id": 50,
+      "code": "743920576"
+    },
+    "station": {
+      "code": "4183126061",
+      "name": "Matthewburgh",
+      "coordinates": "('33.7207', '-116.21677')"
+    },
+    "launch_date": "2025-01-02"
+  },
+  {
+    "id": 3,
+    "code": "1971626508",
+    "name": "Push",
+    "crew": {
+      "id": 1,
+      "code": "881557580",
+      "lead": {
+        "id": 2,
+        "type": "astronaut",
+        "code": "8685543559",
+        "name": "Brandon Rodriguez",
+        "role": "engineer"
+      }
+    },
+    "rocket": {
+      "id": 20,
+      "code": "1117447911"
+    },
+    "station": {
+      "code": "917844342",
+      "name": "Lake Jeff",
+      "coordinates": "('33.76446', '-117.79394')"
+    },
+    "launch_date": "2024-04-23"
+  },
+  {
+    "id": 2,
+    "code": "7593017353",
+    "name": "Professional",
+    "crew": {
+      "id": 1,
+      "code": "881557580",
+      "lead": {
+        "id": 2,
+        "type": "astronaut",
+        "code": "8685543559",
+        "name": "Brandon Rodriguez",
+        "role": "engineer"
+      }
+    },
+    "rocket": {
+      "id": 16,
+      "code": "4150234806"
+    },
+    "station": {
+      "code": "917844342",
+      "name": "Lake Jeff",
+      "coordinates": "('33.76446', '-117.79394')"
+    },
+    "launch_date": "2024-10-14"
+  }
+]
+// --8<-- [end:get-missions]

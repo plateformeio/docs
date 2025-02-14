@@ -1,0 +1,42 @@
+/* Domain */
+.md-typeset .md-tag[class*=' md-tag--domain-'] {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset .md-tag[class*=' md-tag--domain-']:before {
+  background-color: var(--md-primary-bg-color);
+}
+
+/* Repository */
+.md-typeset .md-tag.md-tag--repo {
+  background-color: hsl(var(--theme-brand) / 0.2);
+}
+
+.md-typeset .md-tag.md-tag--repo:before {
+  background-color: hsl(var(--theme-brand));
+}
+
+.md-typeset .md-tag.md-tag--repo-api {
+  background-color: #0095862a;
+}
+
+.md-typeset .md-tag.md-tag--repo-api:before {
+  background-color: #009585;
+}
+
+.md-typeset .md-tag.md-tag--repo-database {
+  background-color: #3b82f62a;
+}
+
+.md-typeset .md-tag.md-tag--repo-database:before {
+  background-color: #3b82f6;
+}
+
+.md-typeset .md-tag.md-tag--repo-schema {
+  background-color: #e920632a;
+}
+
+.md-typeset .md-tag.md-tag--repo-schema:before {
+  background-color: #e92064;
+}

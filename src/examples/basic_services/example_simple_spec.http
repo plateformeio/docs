@@ -1,0 +1,81 @@
+# --8<-- [start:post-materials]
+POST http://127.0.0.1:8001/materials HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Main Engine",
+      "code": "ME-1000",
+      "price": 1500000.00
+    },
+    {
+      "name": "Primary Fuel Tank",
+      "code": "FT-500",
+      "price": 145000.00
+    },
+    {
+      "name": "Guidance System",
+      "code": "GS-200",
+      "price": 120000.00
+    }
+  ]
+}
+
+# --8<-- [end:post-materials]
+
+###
+
+# --8<-- [start:buy-materials]
+POST http://127.0.0.1:8001/materials/buy HTTP/1.1
+content-type: application/json
+
+{
+  "1": 2,
+  "2": 1,
+  "3": 1
+}
+
+# --8<-- [end:buy-materials]
+
+###
+
+# --8<-- [start:post-rockets]
+POST http://127.0.0.1:8001/rockets HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Saturn V",
+      "code": "SAT-V",
+      "price": 240000000.00
+    },
+    {
+      "name": "Falcon 9",
+      "code": "FAL-9",
+      "price": 62000000.00
+    },
+    {
+      "name": "Space Launch System",
+      "code": "SLS-1",
+      "price": 500000000.00
+    }
+  ]
+}
+
+# --8<-- [end:post-rockets]
+
+###
+
+# --8<-- [start:buy-rockets]
+POST http://127.0.0.1:8001/rockets/buy HTTP/1.1
+content-type: application/json
+
+{
+  "1": 2,
+  "2": 1,
+  "3": 1
+}
+
+# --8<-- [end:buy-rockets]

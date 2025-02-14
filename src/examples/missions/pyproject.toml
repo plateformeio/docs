@@ -1,0 +1,10 @@
+[project]
+name = "missions"
+version = "0.1.0"
+description = "The missions example project"
+keywords = ["plateforme", "missions", "example"]
+
+[tool.plateforme.apps.default]
+scripts = {setup = "python server/setup.py"}
+build = ["setup"]
+start = "server.main:app --port 8001"

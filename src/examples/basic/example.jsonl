@@ -1,0 +1,563 @@
+// --8<-- [start:post-materials]
+[
+  {
+    "id": 1,
+    "type": "material",
+    "code": "ME-1000",
+    "name": "Main Engine",
+    "rocket_parts": []
+  },
+  {
+    "id": 2,
+    "type": "material",
+    "code": "FT-500",
+    "name": "Primary Fuel Tank",
+    "rocket_parts": []
+  },
+  {
+    "id": 3,
+    "type": "material",
+    "code": "FT-501",
+    "name": "Secondary Fuel Tank",
+    "rocket_parts": []
+  },
+  {
+    "id": 4,
+    "type": "material",
+    "code": "GS-200",
+    "name": "Guidance System",
+    "rocket_parts": []
+  },
+  {
+    "id": 5,
+    "type": "material",
+    "code": "PB-300",
+    "name": "Primary Payload Bay",
+    "rocket_parts": []
+  },
+  {
+    "id": 6,
+    "type": "material",
+    "code": "PB-301",
+    "name": "Secondary Payload Bay",
+    "rocket_parts": []
+  },
+  {
+    "id": 7,
+    "type": "material",
+    "code": "NC-150",
+    "name": "Nose Cone",
+    "rocket_parts": []
+  },
+  {
+    "id": 8,
+    "type": "material",
+    "code": "TV-400",
+    "name": "Thrust Vector Control",
+    "rocket_parts": []
+  },
+  {
+    "id": 9,
+    "type": "material",
+    "code": "NC-600",
+    "name": "Navigation Computer",
+    "rocket_parts": []
+  },
+  {
+    "id": 10,
+    "type": "material",
+    "code": "CS-700",
+    "name": "Communication System",
+    "rocket_parts": []
+  },
+  {
+    "id": 11,
+    "type": "material",
+    "code": "TP-800",
+    "name": "Thermal Protection System",
+    "rocket_parts": []
+  },
+  {
+    "id": 12,
+    "type": "material",
+    "code": "LG-250",
+    "name": "Landing Gear",
+    "rocket_parts": []
+  },
+  {
+    "id": 13,
+    "type": "material",
+    "code": "PD-900",
+    "name": "Power Distribution Unit",
+    "rocket_parts": []
+  },
+  {
+    "id": 14,
+    "type": "material",
+    "code": "LS-350",
+    "name": "Life Support System",
+    "rocket_parts": []
+  },
+  {
+    "id": 15,
+    "type": "material",
+    "code": "EE-450",
+    "name": "Emergency Escape System",
+    "rocket_parts": []
+  },
+  {
+    "id": 16,
+    "type": "material",
+    "code": "OT-550",
+    "name": "Oxidizer Tank",
+    "rocket_parts": []
+  }
+]
+// --8<-- [end:post-materials]
+// --8<-- [start:get-materials-sort]
+[
+  {
+    "id": 8,
+    "type": "material",
+    "code": "TV-400",
+    "name": "Thrust Vector Control",
+    "rocket_parts": []
+  },
+  {
+    "id": 11,
+    "type": "material",
+    "code": "TP-800",
+    "name": "Thermal Protection System",
+    "rocket_parts": []
+  },
+  {
+    "id": 13,
+    "type": "material",
+    "code": "PD-900",
+    "name": "Power Distribution Unit",
+    "rocket_parts": []
+  },
+  {
+    "id": 6,
+    "type": "material",
+    "code": "PB-301",
+    "name": "Secondary Payload Bay",
+    "rocket_parts": []
+  },
+  {
+    "id": 5,
+    "type": "material",
+    "code": "PB-300",
+    "name": "Primary Payload Bay",
+    "rocket_parts": []
+  }
+]
+// --8<-- [end:get-materials-sort]
+// --8<-- [start:get-materials-like]
+[
+  {
+    "id": 7,
+    "type": "material",
+    "code": "NC-150",
+    "name": "Nose Cone",
+    "rocket_parts": []
+  },
+  {
+    "id": 9,
+    "type": "material",
+    "code": "NC-600",
+    "name": "Navigation Computer",
+    "rocket_parts": []
+  }
+]
+// --8<-- [end:get-materials-like]
+// --8<-- [start:count-materials]
+16
+// --8<-- [end:count-materials]
+// --8<-- [start:update-material-name]
+"Material name updated to 'Base Engine'."
+// --8<-- [end:update-material-name]
+// --8<-- [start:post-rockets-no-parts]
+[
+  {
+    "id": 1,
+    "type": "rocket",
+    "code": "SAT-V",
+    "name": "Saturn V",
+    "parts": []
+  },
+  {
+    "id": 2,
+    "type": "rocket",
+    "code": "FAL-9",
+    "name": "Falcon 9",
+    "parts": []
+  },
+  {
+    "id": 3,
+    "type": "rocket",
+    "code": "SLS-1",
+    "name": "Space Launch System",
+    "parts": []
+  }
+]
+// --8<-- [end:post-rockets-no-parts]
+// --8<-- [start:post-rockets-with-parts]
+[
+  {
+    "id": 4,
+    "type": "rocket",
+    "code": "ATL-6",
+    "name": "Atlas V",
+    "parts": [
+      {
+        "id": 1,
+        "type": "rocket_part",
+        "material": {
+          "id": 3,
+          "type": "material",
+          "code": "FT-501",
+          "name": "Secondary Fuel Tank"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 2,
+        "type": "rocket_part",
+        "material": {
+          "id": 4,
+          "type": "material",
+          "code": "GS-200",
+          "name": "Guidance System"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 3,
+        "type": "rocket_part",
+        "material": {
+          "id": 7,
+          "type": "material",
+          "code": "NC-150",
+          "name": "Nose Cone"
+        },
+        "quantity": 2
+      },
+      {
+        "id": 4,
+        "type": "rocket_part",
+        "material": {
+          "id": 9,
+          "type": "material",
+          "code": "NC-600",
+          "name": "Navigation Computer"
+        },
+        "quantity": 5
+      },
+      {
+        "id": 5,
+        "type": "rocket_part",
+        "material": {
+          "id": 10,
+          "type": "material",
+          "code": "CS-700",
+          "name": "Communication System"
+        },
+        "quantity": 4
+      },
+      {
+        "id": 6,
+        "type": "rocket_part",
+        "material": {
+          "id": 11,
+          "type": "material",
+          "code": "TP-800",
+          "name": "Thermal Protection System"
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "rocket",
+    "code": "ARI-6",
+    "name": "Ariane 6",
+    "parts": [
+      {
+        "id": 7,
+        "type": "rocket_part",
+        "material": {
+          "id": 17,
+          "type": "material",
+          "code": "AC-650",
+          "name": "Attitude Control System"
+        },
+        "quantity": 2
+      },
+      {
+        "id": 8,
+        "type": "rocket_part",
+        "material": {
+          "id": 18,
+          "type": "material",
+          "code": "TS-750",
+          "name": "Telemetry System"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 9,
+        "type": "rocket_part",
+        "material": {
+          "id": 19,
+          "type": "material",
+          "code": "SM-850",
+          "name": "Staging Mechanism"
+        },
+        "quantity": 3
+      },
+      {
+        "id": 10,
+        "type": "rocket_part",
+        "material": {
+          "id": 20,
+          "type": "material",
+          "code": "PF-950",
+          "name": "Propellant Feed System"
+        },
+        "quantity": 3
+      }
+    ]
+  }
+]
+// --8<-- [end:post-rockets-with-parts]
+// --8<-- [start:get-rockets]
+[
+  {
+    "id": 1,
+    "type": "rocket",
+    "code": "SAT-V",
+    "name": "Saturn V",
+    "parts": []
+  },
+  {
+    "id": 2,
+    "type": "rocket",
+    "code": "FAL-9",
+    "name": "Falcon 9",
+    "parts": []
+  },
+  {
+    "id": 3,
+    "type": "rocket",
+    "code": "SLS-1",
+    "name": "Space Launch System",
+    "parts": []
+  },
+  {
+    "id": 4,
+    "type": "rocket",
+    "code": "ATL-6",
+    "name": "Atlas V",
+    "parts": [
+      {
+        "id": 1,
+        "type": "rocket_part",
+        "material": {
+          "id": 3,
+          "type": "material",
+          "code": "FT-501",
+          "name": "Secondary Fuel Tank"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 2,
+        "type": "rocket_part",
+        "material": {
+          "id": 4,
+          "type": "material",
+          "code": "GS-200",
+          "name": "Guidance System"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 6,
+        "type": "rocket_part",
+        "material": {
+          "id": 11,
+          "type": "material",
+          "code": "TP-800",
+          "name": "Thermal Protection System"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 3,
+        "type": "rocket_part",
+        "material": {
+          "id": 7,
+          "type": "material",
+          "code": "NC-150",
+          "name": "Nose Cone"
+        },
+        "quantity": 2
+      },
+      {
+        "id": 5,
+        "type": "rocket_part",
+        "material": {
+          "id": 10,
+          "type": "material",
+          "code": "CS-700",
+          "name": "Communication System"
+        },
+        "quantity": 4
+      },
+      {
+        "id": 4,
+        "type": "rocket_part",
+        "material": {
+          "id": 9,
+          "type": "material",
+          "code": "NC-600",
+          "name": "Navigation Computer"
+        },
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "rocket",
+    "code": "ARI-6",
+    "name": "Ariane 6",
+    "parts": [
+      {
+        "id": 8,
+        "type": "rocket_part",
+        "material": {
+          "id": 18,
+          "type": "material",
+          "code": "TS-750",
+          "name": "Telemetry System"
+        },
+        "quantity": 1
+      },
+      {
+        "id": 7,
+        "type": "rocket_part",
+        "material": {
+          "id": 17,
+          "type": "material",
+          "code": "AC-650",
+          "name": "Attitude Control System"
+        },
+        "quantity": 2
+      },
+      {
+        "id": 9,
+        "type": "rocket_part",
+        "material": {
+          "id": 19,
+          "type": "material",
+          "code": "SM-850",
+          "name": "Staging Mechanism"
+        },
+        "quantity": 3
+      },
+      {
+        "id": 10,
+        "type": "rocket_part",
+        "material": {
+          "id": 20,
+          "type": "material",
+          "code": "PF-950",
+          "name": "Propellant Feed System"
+        },
+        "quantity": 3
+      }
+    ]
+  }
+]
+// --8<-- [end:get-rockets]
+// --8<-- [start:patch-rocket]
+{
+  "id": 1,
+  "type": "rocket",
+  "code": "SAT-V",
+  "name": "Saturn IB",
+  "parts": [
+    {
+      "id": 11,
+      "type": "rocket_part",
+      "material": {
+        "id": 1,
+        "type": "material",
+        "code": "ME-1000",
+        "name": "Main Engine"
+      },
+      "quantity": 2
+    },
+    {
+      "id": 12,
+      "type": "rocket_part",
+      "material": {
+        "id": 4,
+        "type": "material",
+        "code": "GS-200",
+        "name": "Guidance System"
+      },
+      "quantity": 1
+    }
+  ]
+}
+// --8<-- [end:patch-rocket]
+// --8<-- [start:get-rocket-parts]
+[
+  {
+    "id": 11,
+    "type": "rocket_part",
+    "material": {
+      "id": 1,
+      "type": "material",
+      "code": "ME-1000",
+      "name": "Main Engine"
+    },
+    "quantity": 2
+  },
+  {
+    "id": 12,
+    "type": "rocket_part",
+    "material": {
+      "id": 4,
+      "type": "material",
+      "code": "GS-200",
+      "name": "Guidance System"
+    },
+    "quantity": 1
+  }
+]
+// --8<-- [end:get-rocket-parts]
+// --8<-- [start:get-rockets-match]
+[
+  {
+    "id": 3,
+    "material": {
+      "code": "NC-150",
+      "name": "Nose Cone"
+    },
+    "quantity": 2
+  },
+  {
+    "id": 4,
+    "material": {
+      "code": "NC-600",
+      "name": "Navigation Computer"
+    },
+    "quantity": 5
+  }
+]
+// --8<-- [end:get-rockets-match]

@@ -1,0 +1,78 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit:
+  // https://code.visualstudio.com/docs/editor/debugging#_launch-configurations
+
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python File",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${fileDirname}",
+      "program": "${file}",
+      "python": "${command:python.interpreterPath}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Python Module",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/src/${input:projectFolder}",
+      "module": "${input:projectFile}",
+      "python": "${command:python.interpreterPath}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "CLI",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "plateforme",
+      "cwd": "${workspaceFolder}",
+      "args": "${input:command}",
+      "python": "${command:python.interpreterPath}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Uvicorn",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/src/${input:projectFolder}",
+      "args": ["${input:projectFile}:app", "--port", "8001", "--reload", "--lifespan", "on"],
+      "python": "${command:python.interpreterPath}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "command",
+      "type": "promptString",
+      "description": "Enter command"
+    },
+    {
+      "id": "projectFolder",
+      "type": "pickString",
+      "description": "Select a project folder to debug",
+      "options": [
+        { "value": "examples/basic" },
+        { "value": "examples/basic_associations" },
+        { "value": "examples/basic_database" },
+        { "value": "examples/basic_inheritance" },
+        { "value": "examples/basic_packages" },
+        { "value": "examples/basic_services" },
+        { "value": "examples/missions" }
+      ]
+    },
+    {
+      "id": "projectFile",
+      "type": "promptString",
+      "description": "Enter a project file to debug"
+    }
+  ]
+}

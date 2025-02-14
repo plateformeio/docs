@@ -1,0 +1,90 @@
+[project]
+name = "docs"
+version = "0.1.0"
+description = "The modern Python ASGI Framework for data-driven Applications and Services"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Rodolphe Barbanneau"},
+]
+requires-python = ">=3.12"
+dependencies = [
+    "plateforme[all]",
+    "griffe-autodocstringstyle @ git+https://{env:GH_TOKEN:?}@github.com/pawamoy-insiders/griffe-autodocstringstyle.git",
+    "griffe-sphinx @ git+https://{env:GH_TOKEN:?}@github.com/pawamoy-insiders/griffe-sphinx.git",
+    "mike",
+    "mkdocs",
+    "mkdocs-autorefs",
+    "mkdocs-awesome-pages-plugin",
+    "mkdocs-macros-plugin",
+    "mkdocs-material[imaging] @ git+https://{env:GH_TOKEN:?}@github.com/squidfunk/mkdocs-material-insiders.git",
+    "mkdocs-redirects",
+    "mkdocstrings",
+    "mkdocstrings-python",
+    "python-dotenv",
+    "pytkdocs",
+    "termynal",
+    "watchdog",
+]
+
+[project.optional-dependencies]
+reference = [
+    "fastapi",
+    "pydantic",
+    "pydantic_core",
+    "sqlalchemy",
+    "starlette",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]
+
+[tool.hatch.envs.default]
+installer = "uv"
+path = ".venv"
+
+[tool.hatch.envs.default.scripts]
+setup = "mkdir -p public"
+build = ["setup", "mkdocs build {args}"]
+deploy = ["setup", "mike deploy {args}"]
+serve = ["setup", "mkdocs serve {args}"]
+serve-versions = ["setup", "mike serve {args}"]
+
+[[tool.hatch.envs.dev.matrix]]
+mode = [
+    "minimal",
+    "with-pkg",
+    "with-pkg-local",
+    "with-ref",
+    "with-ref-local",
+    "prelaunch",
+    "prelaunch-local",
+]
+
+[tool.hatch.envs.dev.overrides]
+matrix.mode.dependencies = [
+    { value = "docs[reference] @ .", if = ["with-ref", "with-ref-local", "prelaunch", "prelaunch-local"] },
+    { value = "plateforme[all] @ {env:PLATEFORME:file:///PLATEFORME_UNSET}", if = ["with-pkg-local", "with-ref-local", "prelaunch-local"] },
+]
+matrix.mode.env-vars = [
+    { key = "PACKAGES_PATH", value = "..", if = ["with-pkg", "with-pkg-local", "prelaunch", "prelaunch-local"] },
+    { key = "PLUGINS_MKDOCSTRINGS", value = "TRUE", if = ["with-ref", "with-ref-local", "prelaunch", "prelaunch-local"] },
+]
+
+[tool.hatch.envs.prod]
+dev-mode = false
+dependencies = ["docs[reference] @ ."]
+
+[tool.hatch.envs.prod.env-vars]
+PACKAGES_PATH = "../packages"
+PLUGINS_MKDOCSTRINGS = "FALSE"
+PLUGINS_OPTIMIZE = "TRUE"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.ruff.lint]
+ignore = ["E402"]

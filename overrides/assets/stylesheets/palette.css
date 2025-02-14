@@ -1,0 +1,229 @@
+:root {
+  --theme-hue: 45deg;
+  --theme-brand: 45.4 93.4% 47.5%;
+  --theme-brand-foreground: 240 5.9% 10%;
+  --theme-love: 330.4 81.2% 60.4%;
+  --theme-love-foreground: 240 4.8% 95.9%;
+  --theme-success: 142.1 76.2% 36.3%;
+  --theme-warning: 24.6 95% 53.1%;
+  --theme-radius: 0.35rem;
+
+  --light-background: 0 0% 98%;
+  --light-foreground: 240 5.9% 10%;
+  --light-primary: var(--theme-brand);
+  --light-primary-foreground: var(--theme-brand-foreground);
+  --light-secondary: 240 4.8% 95.9%;
+  --light-secondary-foreground: 240 5.9% 10%;
+  --light-accent: 240 4.9% 83.9%;
+  --light-accent-foreground: 240 5.9% 10%;
+  --light-muted: 240 5.9% 90%;
+  --light-muted-foreground: 240 3.8% 46.1%;
+  --light-card: 0 0% 100%;
+  --light-card-foreground: 240 5.9% 10%;
+  --light-popover: 0 0% 100%;
+  --light-popover-foreground: 240 5.9% 10%;
+  --light-destructive: 0 72.2% 50.6%;
+  --light-destructive-foreground: 0 85.7% 97.3%;
+  --light-highlight: 217.2 91.2% 59.8%;
+  --light-highlight-foreground: 213.8 100% 96.9%;
+  --light-success: 142.1 76.2% 36.3%;
+  --light-success-foreground: 138.5 76.5% 96.7%;
+  --light-border: 240 5.9% 90%;
+  --light-input: 240 4.9% 83.9%;
+  --light-ring: 240 5.9% 10%;
+
+  --dark-background: 240 7.9% 7%;
+  --dark-foreground: 240 4.8% 95.9%;
+  --dark-primary: var(--theme-brand);
+  --dark-primary-foreground: var(--theme-brand-foreground);
+  --dark-secondary: 240 10% 3.9%;
+  --dark-secondary-foreground: 0 0% 98%;
+  --dark-accent: 240 5.3% 26.1%;
+  --dark-accent-foreground: 0 0% 98%;
+  --dark-muted: 240 3.7% 15.9%;
+  --dark-muted-foreground: 240 3.8% 46.1%;
+  --dark-card: 240 10% 3.9%;
+  --dark-card-foreground: 0 0% 98%;
+  --dark-popover: 240 5.9% 10%;
+  --dark-popover-foreground: 0 0% 98%;
+  --dark-destructive: 0 72.2% 50.6%;
+  --dark-destructive-foreground: 0 85.7% 97.3%;
+  --dark-highlight: 221.2 83.2% 53.3%;
+  --dark-highlight-foreground: 213.8 100% 96.9%;
+  --dark-success: 142.1 76.2% 36.3%;
+  --dark-success-foreground: 138.5 76.5% 96.7%;
+  --dark-border: 240 3.7% 15.9%;
+  --dark-input: 240 5.3% 26.1%;
+  --dark-ring: 0 0% 98%;
+}
+
+:root,
+[data-md-color-scheme='default'] {
+  --md-hue: var(--theme-hue);
+  --md-primary-fg-color: hsl(var(--light-foreground));
+  --md-primary-fg-color--light: hsl(var(--light-foreground) / 0.8);
+  --md-primary-fg-color--dark: hsl(var(--light-foreground));
+  --md-primary-bg-color: hsl(var(--light-background));
+  --md-primary-bg-color--light: hsl(var(--light-background) / 0.8);
+
+  --md-accent-fg-color: hsl(var(--light-foreground));
+  --md-accent-fg-color--light: hsl(var(--light-foreground) / 0.8);
+  --md-accent-fg-color--lighter: hsl(var(--light-foreground) / 0.3);
+  --md-accent-fg-color--lightest: hsl(var(--light-foreground) / 0.1);
+  --md-accent-fg-color--transparent: hsl(var(--light-foreground) / 0.05);
+  --md-accent-bg-color: hsl(var(--light-background));
+  --md-accent-bg-color--light: hsl(var(--light-background) / 0.8);
+
+  --md-default-fg-color: hsl(var(--light-foreground));
+  --md-default-fg-color--light: hsl(var(--light-foreground) / 0.8);
+  --md-default-fg-color--lighter: hsl(var(--light-foreground) / 0.3);
+  --md-default-fg-color--lightest: hsl(var(--light-foreground) / 0.1);
+  --md-default-fg-color--transparent: hsl(var(--light-foreground) / 0.05);
+  --md-default-bg-color: hsl(var(--light-background));
+  --md-default-bg-color--light: hsl(var(--light-background) / 0.8);
+  --md-default-bg-color--lighter: hsl(var(--light-background) / 0.3);
+  --md-default-bg-color--lightest: hsl(var(--light-background) / 0.1);
+
+  --md-border-color: hsl(var(--light-border));
+  --md-card-color: hsl(var(--light-card));
+  --md-popover-color: hsl(var(--light-popover));
+  --md-code-fg-color: hsl(var(--light-card-foreground));
+  --md-code-bg-color: hsl(var(--light-secondary));
+  --md-code-bg-color--inline: hsl(var(--light-foreground) / 0.05);
+  --md-code-bg-color--result: hsl(var(--light-secondary) / 0.3);
+  --md-code-hl-color: #4287ff;
+  --md-code-hl-color--light: #4287ff1a;
+  --md-code-hl-number-color: #d52a2a;
+  --md-code-hl-special-color: #db1457;
+  --md-code-hl-function-color: #a846b9;
+  --md-code-hl-constant-color: #6e59d9;
+  --md-code-hl-keyword-color: #3f6ec6;
+  --md-code-hl-string-color: #1c7d4d;
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+  --md-code-hl-comment-color: var(--md-default-fg-color--light);
+  --md-code-hl-generic-color: var(--md-default-fg-color--light);
+  --md-code-hl-variable-color: var(--md-default-fg-color--light);
+  --md-typeset-color: var(--md-default-fg-color);
+  --md-typeset-color--light: var(--md-default-fg-color--light);
+  --md-typeset-a-color: var(--md-accent-fg-color);
+  --md-typeset-del-color: #f5503d26;
+  --md-typeset-ins-color: #0bd57026;
+  --md-typeset-kbd-color: #fafafa;
+  --md-typeset-kbd-accent-color: #fff;
+  --md-typeset-kbd-border-color: #b8b8b8;
+  --md-typeset-mark-color: hsl(var(--theme-brand) / 0.3);
+  --md-typeset-table-color: #0000001f;
+  --md-typeset-table-color--light: rgba(0, 0, 0, 0.035);
+  --md-admonition-fg-color: var(--md-default-fg-color);
+  --md-admonition-bg-color: var(--md-default-bg-color);
+  --md-warning-fg-color: #000000de;
+  --md-warning-bg-color: hsl(var(--theme-warning));
+  --md-header-fg-color: hsl(var(--light-secondary-foreground));
+  --md-header-bg-color: hsl(var(--light-secondary));
+  --md-header-bg-color--transparent: hsl(var(--light-secondary) / 0.8);
+  --md-footer-fg-color: hsl(var(--light-secondary-foreground));
+  --md-footer-fg-color--light: hsl(var(--light-secondary-foreground) / 0.8);
+  --md-footer-fg-color--lighter: hsl(var(--light-secondary-foreground) / 0.3);
+  --md-footer-bg-color: hsl(var(--light-secondary));
+  --md-footer-bg-color--dark: hsl(var(--light-secondary) / 0.3);
+  --md-footer-bg-color--darker: hsl(var(--light-secondary) / 0.8);
+  --md-shadow-z1: 0 0.2rem 0.5rem #0000000d, 0 0 0.05rem #0000001a;
+  --md-shadow-z2: 0 0.2rem 0.5rem #0000001a, 0 0 0.05rem #00000040;
+  --md-shadow-z3: 0 0.2rem 0.5rem #0003, 0 0 0.05rem #00000059;
+}
+
+@media screen {
+  [data-md-color-scheme='slate'] {
+    --md-primary-fg-color: hsl(var(--dark-foreground));
+    --md-primary-fg-color--light: hsl(var(--dark-foreground) / 0.8);
+    --md-primary-fg-color--dark: hsl(var(--dark-foreground));
+    --md-primary-bg-color: hsl(var(--dark-background));
+    --md-primary-bg-color--light: hsl(var(--dark-background) / 0.8);
+
+    --md-accent-fg-color: hsl(var(--dark-foreground));
+    --md-accent-fg-color--light: hsl(var(--dark-foreground) / 0.8);
+    --md-accent-fg-color--lighter: hsl(var(--dark-foreground) / 0.3);
+    --md-accent-fg-color--lightest: hsl(var(--dark-foreground) / 0.1);
+    --md-accent-fg-color--transparent: hsl(var(--dark-foreground) / 0.05);
+    --md-accent-bg-color: hsl(var(--dark-background));
+    --md-accent-bg-color--light: hsl(var(--dark-background) / 0.8);
+
+    --md-default-fg-color: hsl(var(--dark-foreground));
+    --md-default-fg-color--light: hsl(var(--dark-foreground) / 0.8);
+    --md-default-fg-color--lighter: hsl(var(--dark-foreground) / 0.3);
+    --md-default-fg-color--lightest: hsl(var(--dark-foreground) / 0.1);
+    --md-default-fg-color--transparent: hsl(var(--dark-foreground) / 0.05);
+    --md-default-bg-color: hsl(var(--dark-background));
+    --md-default-bg-color--light: hsl(var(--dark-background) / 0.8);
+    --md-default-bg-color--lighter: hsl(var(--dark-background) / 0.3);
+    --md-default-bg-color--lightest: hsl(var(--dark-background) / 0.1);
+
+    --md-border-color: hsl(var(--dark-border));
+    --md-card-color: hsl(var(--dark-card));
+    --md-popover-color: hsl(var(--dark-popover));
+    --md-code-fg-color: hsl(var(--dark-card-foreground));
+    --md-code-bg-color: hsl(var(--dark-secondary));
+    --md-code-bg-color--inline: hsl(var(--dark-foreground) / 0.05);
+    --md-code-bg-color--result: hsl(var(--dark-secondary) / 0.3);
+    --md-code-hl-color: #2977ff;
+    --md-code-hl-color--light: #2977ff1a;
+    --md-code-hl-number-color: #e6695b;
+    --md-code-hl-special-color: #f06090;
+    --md-code-hl-function-color: #c973d9;
+    --md-code-hl-constant-color: #9383e2;
+    --md-code-hl-keyword-color: #6791e0;
+    --md-code-hl-string-color: #2fb170;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-color--light: var(--md-default-fg-color--light);
+    --md-typeset-a-color: var(--md-accent-fg-color);
+    --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 90%, 0.12);
+    --md-typeset-kbd-accent-color: hsla(var(--md-hue), 15%, 90%, 0.2);
+    --md-typeset-kbd-border-color: hsla(var(--md-hue), 15%, 14%, 1);
+    --md-typeset-mark-color: hsl(var(--theme-brand) / 0.3);
+    --md-typeset-table-color: hsla(var(--md-hue), 15%, 95%, 0.12);
+    --md-typeset-table-color--light: hsla(var(--md-hue), 15%, 95%, 0.035);
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-admonition-bg-color: var(--md-default-bg-color);
+    --md-header-fg-color: hsl(var(--dark-secondary-foreground));
+    --md-header-bg-color: hsl(var(--dark-secondary));
+    --md-header-bg-color--transparent: hsl(var(--dark-secondary) / 0.8);
+    --md-footer-fg-color: hsl(var(--dark-secondary-foreground));
+    --md-footer-fg-color--light: hsl(var(--dark-secondary-foreground) / 0.8);
+    --md-footer-fg-color--lighter: hsl(var(--dark-secondary-foreground) / 0.3);
+    --md-footer-bg-color: hsl(var(--dark-secondary));
+    --md-footer-bg-color--dark: hsl(var(--dark-secondary) / 0.3);
+    --md-footer-bg-color--darker: hsl(var(--dark-secondary) / 0.8);
+    --md-shadow-z1: 0 0.2rem 0.5rem #0000000d, 0 0 0.05rem #0000001a;
+    --md-shadow-z2: 0 0.2rem 0.5rem #00000040, 0 0 0.05rem #00000040;
+    --md-shadow-z3: 0 0.2rem 0.5rem #0006, 0 0 0.05rem #00000059;
+    color-scheme: dark;
+  }
+}
+
+.md-color-primary {
+  color: var(--md-primary-fg-color);
+}
+
+.md-color-accent {
+  color: var(--md-accent-fg-color);
+}
+
+.md-color-love {
+  color: hsl(var(--theme-love));
+}
+
+.md-color-warning {
+  color: hsl(var(--theme-warning));
+}
+
+.md-color-success {
+  color: hsl(var(--theme-success));
+}

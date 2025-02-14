@@ -1,0 +1,71 @@
+# --8<-- [start:post-materials]
+POST http://127.0.0.1:8001/materials HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Main Engine",
+      "code": "ME-1000"
+    },
+    {
+      "name": "Primary Fuel Tank",
+      "code": "FT-500"
+    },
+    {
+      "name": "Guidance System",
+      "code": "GS-200"
+    }
+  ]
+}
+
+# --8<-- [end:post-materials]
+
+###
+
+# --8<-- [start:describe-many-materials]
+GET http://127.0.0.1:8001/materials/describe HTTP/1.1
+# --8<-- [end:describe-many-materials]
+
+###
+
+# --8<-- [start:describe-one-material]
+GET http://127.0.0.1:8001/materials/2/describe HTTP/1.1
+# --8<-- [end:describe-one-material]
+
+###
+
+# --8<-- [start:post-rockets]
+POST http://127.0.0.1:8001/rockets HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Saturn V",
+      "code": "SAT-V"
+    },
+    {
+      "name": "Falcon 9",
+      "code": "FAL-9"
+    },
+    {
+      "name": "Space Launch System",
+      "code": "SLS-1"
+    }
+  ]
+}
+
+# --8<-- [end:post-rockets]
+
+###
+
+# --8<-- [start:describe-many-rockets]
+GET http://127.0.0.1:8001/rockets/describe HTTP/1.1
+# --8<-- [end:describe-many-rockets]
+
+###
+
+# --8<-- [start:describe-one-rocket]
+GET http://127.0.0.1:8001/rockets/1/describe HTTP/1.1
+# --8<-- [end:describe-one-rocket]

@@ -1,0 +1,16 @@
+<div class="md-header__group">
+  <a href="{{ config.extra.links.sponsors }}" title="Sponsors" class="md-source">
+    <div class="md-source__icon sponsors md-icon">
+      {% include ".icons/octicons/sponsor-tiers-24.svg" %}
+    </div>
+  </a>
+  <a href="{{ config.repo_url }}" title="{{ lang.t('source') }}" class="md-source" data-md-component="source">
+    <div class="md-source__icon repository md-icon">
+      {% set icon = config.theme.icon.repo %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </div>
+    <div class="md-source__repository">
+      {{ config.repo_name }}
+    </div>
+  </a>
+</div>

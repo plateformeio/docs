@@ -1,0 +1,24 @@
+# --8<-- [start:project-config]
+[project]
+name = "my-app"
+description = "My first application"
+version = "0.1.0"
+authors = [
+    {name = "Rodolphe", email = "rodolphe@example.com"},
+]
+readme = "README.md"
+keywords = [
+    "plateforme",
+]
+requires-python = ">=3.13"
+dependencies = [
+    "plateforme",
+]
+# --8<-- [end:project-config]
+
+# --8<-- [start:app-config]
+[tool.plateforme.apps.default]
+scripts = {setup = "python setup.py"}
+build = ["setup"]
+start = "main:app --port 8001"
+# --8<-- [end:app-config]

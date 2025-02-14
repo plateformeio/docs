@@ -1,0 +1,316 @@
+# --8<-- [start:post-materials-summary]
+POST http://127.0.0.1:8001/materials HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Main Engine",
+      "code": "ME-1000"
+    },
+    {
+      "name": "Primary Fuel Tank",
+      "code": "FT-500"
+    },
+    ...
+  ]
+}
+
+# --8<-- [end:post-materials-summary]
+
+###
+
+# --8<-- [start:post-materials]
+POST http://127.0.0.1:8001/materials HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Main Engine",
+      "code": "ME-1000"
+    },
+    {
+      "name": "Primary Fuel Tank",
+      "code": "FT-500"
+    },
+    {
+      "name": "Secondary Fuel Tank",
+      "code": "FT-501"
+    },
+    {
+      "name": "Guidance System",
+      "code": "GS-200"
+    },
+    {
+      "name": "Primary Payload Bay",
+      "code": "PB-300"
+    },
+    {
+      "name": "Secondary Payload Bay",
+      "code": "PB-301"
+    },
+    {
+      "name": "Nose Cone",
+      "code": "NC-150"
+    },
+    {
+      "name": "Thrust Vector Control",
+      "code": "TV-400"
+    },
+    {
+      "name": "Navigation Computer",
+      "code": "NC-600"
+    },
+    {
+      "name": "Communication System",
+      "code": "CS-700"
+    },
+    {
+      "name": "Thermal Protection System",
+      "code": "TP-800"
+    },
+    {
+      "name": "Landing Gear",
+      "code": "LG-250"
+    },
+    {
+      "name": "Power Distribution Unit",
+      "code": "PD-900"
+    },
+    {
+      "name": "Life Support System",
+      "code": "LS-350"
+    },
+    {
+      "name": "Emergency Escape System",
+      "code": "EE-450"
+    },
+    {
+      "name": "Oxidizer Tank",
+      "code": "OT-550"
+    }
+  ]
+}
+
+# --8<-- [end:post-materials]
+
+###
+
+# --8<-- [start:get-materials-sort]
+GET http://127.0.0.1:8001/materials?limit=5&sort=-code HTTP/1.1
+# --8<-- [end:get-materials-sort]
+
+###
+
+# --8<-- [start:get-materials-like]
+GET http://127.0.0.1:8001/materials?.code=like~%NC%&.id=gt~2 HTTP/1.1
+# --8<-- [end:get-materials-like]
+
+###
+
+# --8<-- [start:count-materials]
+GET http://127.0.0.1:8001/materials/count HTTP/1.1
+# --8<-- [end:count-materials]
+
+###
+
+# --8<-- [start:update-material-name]
+POST http://127.0.0.1:8001/materials/1/update-name?name=Base%20Engine HTTP/1.1
+# --8<-- [end:update-material-name]
+
+###
+
+# --8<-- [start:post-rockets-no-parts]
+POST http://127.0.0.1:8001/rockets HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Saturn V",
+      "code": "SAT-V"
+    },
+    {
+      "name": "Falcon 9",
+      "code": "FAL-9"
+    },
+    {
+      "name": "Space Launch System",
+      "code": "SLS-1"
+    }
+  ]
+}
+
+# --8<-- [end:post-rockets-no-parts]
+
+###
+
+# --8<-- [start:post-rockets-with-parts-summary]
+POST http://127.0.0.1:8001/rockets HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Atlas V",
+      "code": "ATL-6",
+      "parts": [
+        {
+          "material": 3,
+          "quantity": 1
+        },
+        ...
+      ]
+    },
+    {
+      "name": "Ariane 6",
+      "code": "ARI-6",
+      "parts": [
+        {
+          "material": {
+            "name": "Attitude Control System",
+            "code": "AC-650"
+          },
+          "quantity": 2
+        },
+        ...
+      ]
+    }
+  ]
+}
+
+# --8<-- [end:post-rockets-with-parts-summary]
+
+###
+
+# --8<-- [start:post-rockets-with-parts]
+POST http://127.0.0.1:8001/rockets HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    {
+      "name": "Atlas V",
+      "code": "ATL-6",
+      "parts": [
+        {
+          "material": 3,
+          "quantity": 1
+        },
+        {
+          "material": 4,
+          "quantity": 1
+        },
+        {
+          "material": 7,
+          "quantity": 2
+        },
+        {
+          "material": 9,
+          "quantity": 5
+        },
+        {
+          "material": 10,
+          "quantity": 4
+        },
+        {
+          "material": 11,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Ariane 6",
+      "code": "ARI-6",
+      "parts": [
+        {
+          "material": {
+            "name": "Attitude Control System",
+            "code": "AC-650"
+          },
+          "quantity": 2
+        },
+        {
+          "material": {
+            "name": "Telemetry System",
+            "code": "TS-750"
+          },
+          "quantity": 1
+        },
+        {
+          "material": {
+            "name": "Staging Mechanism",
+            "code": "SM-850"
+          },
+          "quantity": 3
+        },
+        {
+          "material": {
+            "name": "Propellant Feed System",
+            "code": "PF-950"
+          },
+          "quantity": 3
+        }
+      ]
+    }
+  ]
+}
+
+# --8<-- [end:post-rockets-with-parts]
+
+###
+
+# --8<-- [start:get-rockets]
+GET http://127.0.0.1:8001/rockets HTTP/1.1
+# --8<-- [end:get-rockets]
+
+###
+
+# --8<-- [start:patch-rocket]
+PATCH http://127.0.0.1:8001/rockets?.code=like~%ARI% HTTP/1.1
+content-type: application/json
+
+{
+  "payload": {
+    "parts": [
+      {
+        "material": 1,
+        "quantity": 2
+      },
+      {
+        "material": 4,
+        "quantity": 1
+      }
+    ]
+  }
+}
+
+# --8<-- [end:patch-rocket]
+
+###
+
+# --8<-- [start:get-rocket-parts]
+GET http://127.0.0.1:8001/rockets/1/parts HTTP/1.1
+# --8<-- [end:get-rocket-parts]
+
+###
+
+# --8<-- [start:get-rockets-match]
+GET http://127.0.0.1:8001/rockets/4/parts?.material.code=like~NC% HTTP/1.1
+content-type: application/json
+
+{
+  "include": {
+    "__all__": {
+      "id": true,
+      "material": {
+        "code": true,
+        "name": true
+      },
+      "quantity": true
+    }
+  }
+}
+
+# --8<-- [end:get-rockets-match]

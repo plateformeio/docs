@@ -1,0 +1,9 @@
+[plateforme]
+name = "assets"
+version = "0.1.0"
+description = "The missions example assets package"
+keywords = ["plateforme", "example", "missions", "assets"]
+
+[plateforme.package]
+namespace = "assets"
+api_services = false

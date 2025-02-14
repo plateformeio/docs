@@ -1,0 +1,59 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit:
+  // https://code.visualstudio.com/docs/getstarted/settings#_settingsjson
+
+  // Editor
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.mypy_cache": true
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/.vs": true,
+    "**/.vscode": true
+  },
+  "material-icon-theme.files.associations": {},
+  "material-icon-theme.folders.associations": {
+    "features": "container",
+    "overrides": "public"
+  },
+
+  // Python
+  "python.defaultInterpreterPath": "./.venv/bin/python",
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}/src"
+  },
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}/src"
+  },
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}/src"
+  },
+
+  // Linting
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // MyPy
+  "mypy.enabled": true,
+  "mypy.runUsingActiveInterpreter": true,
+
+  // YAML
+  "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+  },
+  "yaml.customTags": [
+    "!ENV scalar",
+    "!ENV sequence",
+    "!relative scalar",
+    "tag:yaml.org,2002:python/name:scripts.config.TAGS",
+    "tag:yaml.org,2002:python/name:scripts.config.tag_name_index",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+    "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
+  ],
+  "svg.preview.background": "transparent"
+}

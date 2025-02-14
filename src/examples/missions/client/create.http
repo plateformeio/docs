@@ -1,0 +1,13 @@
+# --8<-- [start:post-rockets]
+POST http://127.0.0.1:8001/assets/rockets HTTP/1.1
+content-type: application/json
+
+{
+  "payload": [
+    { "code": "SAT-V", "name": "Saturn V" },
+    { "code": "ARI-5", "name": "Ariane 5" }
+  ],
+  "dry_run": true
+}
+
+# --8<-- [end:post-rockets]

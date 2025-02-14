@@ -1,0 +1,64 @@
+// --8<-- [start:post-materials]
+[
+  {
+    "id": 1,
+    "type": "material",
+    "code": "ME-1000",
+    "name": "Main Engine"
+  },
+  {
+    "id": 2,
+    "type": "material",
+    "code": "FT-500",
+    "name": "Primary Fuel Tank"
+  },
+  {
+    "id": 3,
+    "type": "material",
+    "code": "GS-200",
+    "name": "Guidance System"
+  }
+]
+// --8<-- [end:post-materials]
+// --8<-- [start:describe-many-materials]
+[
+  "Main Engine (ME-1000)",
+  "Primary Fuel Tank (FT-500)",
+  "Guidance System (GS-200)"
+]
+// --8<-- [end:describe-many-materials]
+// --8<-- [start:describe-one-material]
+"Primary Fuel Tank (FT-500)"
+// --8<-- [end:describe-one-material]
+// --8<-- [start:post-rockets]
+[
+  {
+    "id": 1,
+    "type": "rocket",
+    "code": "SAT-V",
+    "name": "Saturn V"
+  },
+  {
+    "id": 2,
+    "type": "rocket",
+    "code": "FAL-9",
+    "name": "Falcon 9"
+  },
+  {
+    "id": 3,
+    "type": "rocket",
+    "code": "SLS-1",
+    "name": "Space Launch System"
+  }
+]
+// --8<-- [end:post-rockets]
+// --8<-- [start:describe-many-rockets]
+[
+  "Saturn V (SAT-V)",
+  "Falcon 9 (FAL-9)",
+  "Space Launch System (SLS-1)"
+]
+// --8<-- [end:describe-many-rockets]
+// --8<-- [start:describe-one-rocket]
+"Saturn V (SAT-V)"
+// --8<-- [end:describe-one-rocket]

@@ -1,0 +1,56 @@
+// --8<-- [start:post-materials]
+[
+  {
+    "id": 1,
+    "type": "material",
+    "code": "ME-1000",
+    "name": "Main Engine",
+    "price": 1500000.0
+  },
+  {
+    "id": 2,
+    "type": "material",
+    "code": "FT-500",
+    "name": "Primary Fuel Tank",
+    "price": 145000.0
+  },
+  {
+    "id": 3,
+    "type": "material",
+    "code": "GS-200",
+    "name": "Guidance System",
+    "price": 120000.0
+  }
+]
+// --8<-- [end:post-materials]
+// --8<-- [start:buy-materials]
+3265000.0
+// --8<-- [end:buy-materials]
+// --8<-- [start:post-rockets]
+[
+  {
+    "id": 1,
+    "type": "rocket",
+    "code": "SAT-V",
+    "name": "Saturn V",
+    "price": 240000000.0
+  },
+  {
+    "id": 2,
+    "type": "rocket",
+    "code": "FAL-9",
+    "name": "Falcon 9",
+    "price": 62000000.0
+  },
+  {
+    "id": 3,
+    "type": "rocket",
+    "code": "SLS-1",
+    "name": "Space Launch System",
+    "price": 500000000.0
+  }
+]
+// --8<-- [end:post-rockets]
+// --8<-- [start:buy-rockets]
+1042000000.0
+// --8<-- [end:buy-rockets]

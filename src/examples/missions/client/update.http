@@ -1,0 +1,28 @@
+# --8<-- [start:patch-rockets]
+PATCH http://127.0.0.1:8001/assets/rockets?.code=like~*2 HTTP/1.1
+content-type: application/json
+
+{
+  "payload": {
+    "description": null
+  },
+  "include": {
+    "__all__": {
+      "id": true,
+      "code": true,
+      "description": true
+    }
+  }
+}
+
+# --8<-- [end:patch-rockets]
+
+###
+
+# --8<-- [start:assign-lead]
+POST http://127.0.0.1:8001/staff/crews/1/assign-lead HTTP/1.1
+content-type: application/json
+
+"2"
+
+# --8<-- [end:assign-lead]

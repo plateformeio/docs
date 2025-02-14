@@ -1,0 +1,13 @@
+# --8<-- [start:put-rocket]
+PUT http://127.0.0.1:8001/assets/rockets HTTP/1.1
+content-type: application/json
+
+{
+  "payload": {
+    "code": "ARI-6",
+    "name": "Ariane 6",
+    "description": "European launch vehicle."
+  }
+}
+
+# --8<-- [end:put-rocket]

@@ -1,0 +1,9 @@
+[plateforme]
+name = "staff"
+version = "0.1.0"
+description = "The missions example staff package"
+keywords = ["plateforme", "example", "missions", "staff"]
+
+[plateforme.package]
+namespace = "staff"
+api_services = false
