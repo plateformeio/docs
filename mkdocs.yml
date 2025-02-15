@@ -386,7 +386,6 @@ plugins:
   - mike:
       alias_type: symlink
       canonical_version: latest
-      deploy_prefix: docs
   - mkdocstrings:
       enabled: !ENV [PLUGINS_MKDOCSTRINGS, false]
       default_handler: python
