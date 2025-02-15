@@ -6,7 +6,7 @@ license = {file = "LICENSE"}
 authors = [
     {name = "Rodolphe Barbanneau"},
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "plateforme[all]",
     "griffe-autodocstringstyle @ git+https://{env:GH_TOKEN:?}@github.com/pawamoy-insiders/griffe-autodocstringstyle.git",
