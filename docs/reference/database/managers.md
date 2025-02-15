@@ -7,7 +7,7 @@ tags:
 ::: plateforme.core.database.base
     options:
       members:
-        - DatabaseManager
+        - 'DatabaseManager'
 
 ::: plateforme.core.database.base
     options:
@@ -16,5 +16,5 @@ tags:
       show_root_toc_entry: false
       docstring_style: sphinx
       members:
-        - MissingGreenlet
-        - inspect
+        - 'MissingGreenlet'
+        - 'inspect'

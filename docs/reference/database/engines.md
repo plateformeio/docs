@@ -19,15 +19,15 @@ tags:
       show_root_toc_entry: false
       docstring_style: sphinx
       members:
-        - AsyncConnection
-        - AsyncEngine
-        - AsyncMappingResult
-        - AsyncResult
-        - AsyncScalarResult
-        - AsyncTransaction
-        - AsyncTupleResult
-        - async_engine_from_config
-        - create_async_engine
+        - 'AsyncConnection'
+        - 'AsyncEngine'
+        - 'AsyncMappingResult'
+        - 'AsyncResult'
+        - 'AsyncScalarResult'
+        - 'AsyncTransaction'
+        - 'AsyncTupleResult'
+        - 'async_engine_from_config'
+        - 'create_async_engine'
       
 ## Sync
 
@@ -38,15 +38,15 @@ tags:
       show_root_toc_entry: false
       docstring_style: sphinx
       members:
-        - Connection
-        - Dialect
-        - Engine
-        - MappingResult
-        - Result
-        - Row
-        - ScalarResult
-        - Transaction
-        - TupleResult
-        - create_engine
-        - create_mock_engine
-        - engine_from_config
+        - 'Connection'
+        - 'Dialect'
+        - 'Engine'
+        - 'MappingResult'
+        - 'Result'
+        - 'Row'
+        - 'ScalarResult'
+        - 'Transaction'
+        - 'TupleResult'
+        - 'create_engine'
+        - 'create_mock_engine'
+        - 'engine_from_config'

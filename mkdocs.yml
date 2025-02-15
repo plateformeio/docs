@@ -400,7 +400,7 @@ plugins:
             signature_crossrefs: true
             docstring_options:
               ignore_init_summary: true
-              method: style_order
+              method: heuristics
               style_order:
                 - google
                 - sphinx

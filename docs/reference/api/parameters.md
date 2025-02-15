@@ -9,14 +9,14 @@ tags:
 ::: plateforme.core.api.parameters
     options:
       members:
-        - Body
-        - Cookie
-        - Depends
-        - File
-        - Form
-        - Header
-        - Path
-        - Payload
-        - Query
-        - Security
-        - Selection
+        - 'Body'
+        - 'Cookie'
+        - 'Depends'
+        - 'File'
+        - 'Form'
+        - 'Header'
+        - 'Path'
+        - 'Payload'
+        - 'Query'
+        - 'Security'
+        - 'Selection'

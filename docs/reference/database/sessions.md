@@ -18,11 +18,11 @@ tags:
       show_root_toc_entry: false
       docstring_style: sphinx
       members:
-        - AsyncSession
-        - AsyncSessionBulk
-        - AsyncSessionFactory
-        - async_session_factory
-        - async_session_manager
+        - 'AsyncSession'
+        - 'AsyncSessionBulk'
+        - 'AsyncSessionFactory'
+        - 'async_session_factory'
+        - 'async_session_manager'
       
 ## Sync
 
@@ -33,8 +33,8 @@ tags:
       show_root_toc_entry: false
       docstring_style: sphinx
       members:
-        - Session
-        - SessionBulk
-        - SessionFactory
-        - session_factory
-        - session_manager
+        - 'Session'
+        - 'SessionBulk'
+        - 'SessionFactory'
+        - 'session_factory'
+        - 'session_manager'

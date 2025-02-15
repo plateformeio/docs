@@ -8,6 +8,6 @@ tags:
 ::: plateforme.core.api.status
     options:
       members:
-        - StatusClass
-        - get_status_class
-        - status
+        - 'StatusClass'
+        - 'get_status_class'
+        - 'status'

@@ -9,9 +9,9 @@ tags:
     options:
       docstring_style: sphinx
       members:
-        - CANCEL
-        - NO_RETVAL
-        - contains
-        - listen
-        - listens_for
-        - remove
+        - 'CANCEL'
+        - 'NO_RETVAL'
+        - 'contains'
+        - 'listen'
+        - 'listens_for'
+        - 'remove'

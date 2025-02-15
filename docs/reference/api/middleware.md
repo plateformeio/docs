@@ -9,10 +9,10 @@ tags:
 ::: plateforme.core.api.middleware
     options:
       members: 
-        - BaseHTTPMiddleware
-        - Middleware
+        - 'BaseHTTPMiddleware'
+        - 'Middleware'
 
 ::: plateforme.core.api.background
     options:
       members:
-        - BackgroundTasks
+        - 'BackgroundTasks'

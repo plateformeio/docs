@@ -9,8 +9,8 @@ tags:
 ::: plateforme.core.database.schema
     options:
       members:
-        - NAMING_CONVENTION
-        - MetaData
+        - 'NAMING_CONVENTION'
+        - 'MetaData'
 
 ::: plateforme.core.database.schema
     options:
@@ -19,7 +19,7 @@ tags:
       show_root_toc_entry: false
       docstring_style: sphinx
       members:
-        - Column
-        - ForeignKey
-        - Index
-        - Table
+        - 'Column'
+        - 'ForeignKey'
+        - 'Index'
+        - 'Table'

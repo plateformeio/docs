@@ -9,7 +9,7 @@ tags:
     options:
       docstring_style: sphinx
       members:
-        - NullPool
-        - QueuePool
-        - SingletonThreadPool
-        - StaticPool
+        - 'NullPool'
+        - 'QueuePool'
+        - 'SingletonThreadPool'
+        - 'StaticPool'
