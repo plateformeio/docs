@@ -18,9 +18,9 @@ icon: octicons/tag-16
 
     Version `0.1.0-a1` (Alpha)
 
-    [:octicons-log-16:]({{ links.repo.core }}/releases/0.1-alpha-1)
-    [:octicons-archive-16:]({{ links.repo.core }}/releases/0.1-alpha-1)
-    &nbsp;&nbsp;&nbsp;:octicons-history-16: _2025-01-16_
+    [:octicons-log-16:]({{ links.repo.core }}/releases/tag/0.1.0-a1)
+    [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a1.zip)
+    &nbsp;&nbsp;&nbsp;:octicons-history-16: _2025-02-15_
 
 -   :fontawesome-brands-python:{ .lg .middle } **Supported versions**
 
@@ -36,7 +36,7 @@ icon: octicons/tag-16
 
 | Version | Status | Release Date | Links |
 |---------|--------|--------------|-------|
-| `0.1.0-a1` | active | 2025-01-16 | [:octicons-tag-16:]({{ links.repo.core }}/releases/0.1.0-a1) [:octicons-download-16:]({{ links.repo.core }}/releases/0.1.0-a1) |
+| `0.1.0-a1` | active | 2025-02-15 | [:octicons-tag-16:]({{ links.repo.core }}/releases/tag/0.1.0-a1) [:octicons-download-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a1.zip) |
 
 Use the following command to install the latest version of Plateforme:
 
@@ -102,30 +102,26 @@ Use the following command to install the latest version of Plateforme:
 
 #### :octicons-hash-24: `alpha-1`
 
-> [:octicons-log-16:]({{ links.repo.core }}/releases/0.1-alpha-1)
-> [:octicons-archive-16:]({{ links.repo.core }}/releases/0.1-alpha-1)
-> &nbsp;•&nbsp;&nbsp;:octicons-history-16: 2025-01-16
+> [:octicons-log-16:]({{ links.repo.core }}/releases/tag/0.1.0-a1)
+> [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a1.zip)
+> &nbsp;•&nbsp;&nbsp;:octicons-history-16: 2025-02-15
 
 
 === ":octicons-rocket-16: Featured"
 
-    - {Major feature with brief impact description}
-    - {Key enhancement that improves developer experience}
+    - NA
 
 === ":octicons-tools-16: Added"
 
-    - {New component}: {what it enables}
-    - {New API}: {key functionality}
+    - NA
 
 === ":octicons-bug-16: Fixed"
 
-    - {Issue type}: {what was resolved}
-    - {Bug category}: {fix impact}
+    - NA
 
 === ":octicons-alert-16: Breaking"
 
-    - {API change}: {migration note}
-    - {Behavior modification}: {impact}
+    - NA
 
 ---
 
