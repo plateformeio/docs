@@ -104,7 +104,7 @@ GET http://127.0.0.1:8001/materials?limit=5&sort=-code HTTP/1.1
 ###
 
 # --8<-- [start:get-materials-like]
-GET http://127.0.0.1:8001/materials?.code=like~%NC%&.id=gt~2 HTTP/1.1
+GET http://127.0.0.1:8001/materials?.code=like~*NC*&.id=gt~2 HTTP/1.1
 # --8<-- [end:get-materials-like]
 
 ###
@@ -268,7 +268,7 @@ GET http://127.0.0.1:8001/rockets HTTP/1.1
 ###
 
 # --8<-- [start:patch-rocket]
-PATCH http://127.0.0.1:8001/rockets?.code=like~%ARI% HTTP/1.1
+PATCH http://127.0.0.1:8001/rockets?.code=like~*ARI* HTTP/1.1
 content-type: application/json
 
 {
@@ -297,7 +297,7 @@ GET http://127.0.0.1:8001/rockets/1/parts HTTP/1.1
 ###
 
 # --8<-- [start:get-rockets-match]
-GET http://127.0.0.1:8001/rockets/4/parts?.material.code=like~NC% HTTP/1.1
+GET http://127.0.0.1:8001/rockets/4/parts?.material.code=like~NC* HTTP/1.1
 content-type: application/json
 
 {
