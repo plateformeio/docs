@@ -175,6 +175,7 @@ theme:
       repo-schema: octicons/repo-16
   custom_dir: public
   features:
+    - content.action.edit
     - content.code.annotate
     - content.code.copy
     - content.code.select
@@ -373,6 +374,13 @@ hooks:
   - scripts/watch.py
 
 plugins:
+  - git-committers:
+      repository: plateformeio/docs
+      branch: main
+      token: !ENV [GH_TOKEN, null]
+  - git-revision-date-localized:
+      type: timeago
+      enable_creation_date: true
   - macros
   - meta
   - mike:
