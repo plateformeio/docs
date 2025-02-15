@@ -218,7 +218,7 @@ theme:
 extra:
   analytics:
     provider: posthog
-    property: phc_t4Ui9gb6TFthIYxeqYOtT1v3zP71B3xRcc9qIsRAyIY
+    property: phc_XLaOpYPOTvcO1ubYF4mDtK9eDNiVk3ul3dcMqW4IcWx
     feedback:
       title: Was this page helpful?
       ratings:
