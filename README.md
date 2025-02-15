@@ -132,7 +132,7 @@ In addition, you can specify where to deploy your docs via `-b/--branch`, `-r/--
 To set the default version that appears at the root URL:
 
 ```bash
-mike set-default [alias]
+hatch -v run prod:mike set-default latest
 ```
 
 All modifications can be committed and pushed to the remote repository. By default, the `gh-pages` branch is used.
@@ -155,6 +155,9 @@ mike delete [identifier]
 
 # Alias a version
 mike alias [identifier] [alias]
+
+# Set the default version
+mike set-default [alias]
 ```
 
 ### Common options
