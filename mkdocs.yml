@@ -1,5 +1,5 @@
 site_name: Plateforme Docs
-site_description: The modern Python ASGI Framework for data-driven Applications and Services
+site_description: The Python framework for Data Applications
 site_author: Plateforme
 site_url: https://docs.plateforme.io
 copyright: Plateforme, All rights reserved
@@ -153,6 +153,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: public
   favicon: favicon.ico
   icon:
     logo: logo
@@ -173,7 +174,6 @@ theme:
       repo-api: octicons/repo-16
       repo-database: octicons/repo-16
       repo-schema: octicons/repo-16
-  custom_dir: public
   features:
     - content.action.edit
     - content.code.annotate
@@ -375,10 +375,12 @@ hooks:
 
 plugins:
   - git-committers:
+      enabled: !ENV [PLUGINS_GIT, false]
       repository: plateformeio/docs
       branch: main
       token: !ENV [GH_TOKEN, null]
   - git-revision-date-localized:
+      enabled: !ENV [PLUGINS_GIT, false]
       type: timeago
       enable_creation_date: true
   - macros
@@ -435,7 +437,13 @@ plugins:
   - optimize:
       enabled: !ENV [PLUGINS_OPTIMIZE, false]
   - search
-  - social
+  - social:
+      cards_layout_options:
+        background_color: transparent
+        background_image: layouts/background.png
+        color: '#cadae8'
+        font_family: Geist
+        logo: layouts/logo.svg
   - tags:
       listings_toc: false
       shadow: false

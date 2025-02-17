@@ -86,6 +86,7 @@ dependencies = ["docs[reference] @ ."]
 
 [tool.hatch.envs.prod.env-vars]
 PACKAGES_PATH = "../packages"
+PLUGINS_GIT = "TRUE"
 PLUGINS_MKDOCSTRINGS = "TRUE"
 PLUGINS_OPTIMIZE = "TRUE"
 
