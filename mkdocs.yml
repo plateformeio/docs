@@ -196,25 +196,27 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-
   palette:
-    - media: '(prefers-color-scheme: dark)'
+    - media: 'all'
       scheme: slate
+      primary: custom
+      accent: amber
       toggle:
         icon: octicons/moon-24
         name: Switch to light preference
-      primary: custom
     - media: '(prefers-color-scheme: light)'
       scheme: default
+      primary: custom
+      accent: amber
       toggle:
         icon: octicons/sun-24
         name: Switch to system mode
-      primary: custom
     - media: '(prefers-color-scheme)'
+      primary: custom
+      accent: amber
       toggle:
         icon: octicons/light-bulb-24
         name: Switch to dark mode
-      primary: custom
 
 extra:
   analytics:
