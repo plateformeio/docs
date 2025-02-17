@@ -4,6 +4,8 @@ tags:
   - Plateforme
 ---
 
+# Types
+
 ::: plateforme.core.types.binaries
 
 ::: plateforme.core.types.datetimes

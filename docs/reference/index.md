@@ -3,6 +3,8 @@ hide:
   - toc
 ---
 
+# Reference
+
 The complete API reference documentation for the Plateforme framework, covering all modules, classes, functions and attributes.
 
 <nav class="md-tags">

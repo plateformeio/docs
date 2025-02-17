@@ -4,6 +4,8 @@ hide:
   - toc
 ---
 
+# Schema
+
 Comprehensive schema definition system built on Pydantic that provides data modeling, validation, serialization and JSON schema generation with extensive customization capabilities.
 
 <nav class="md-tags">

@@ -4,6 +4,8 @@ hide:
   - toc
 ---
 
+# Database
+
 Comprehensive database abstraction layer built on SQLAlchemy that provides session management, connection pooling, bulk operations, and type engines for seamless database interactions while supporting multiple database backends.
 
 <nav class="md-tags">

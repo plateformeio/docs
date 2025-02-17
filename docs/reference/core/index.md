@@ -4,6 +4,8 @@ hide:
   - toc
 ---
 
+# Core
+
 Core architecture providing comprehensive resource management, service abstraction, application lifecycle handling and runtime environment control through an extensible component system.
 
 <nav class="md-tags">
