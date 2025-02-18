@@ -12,4 +12,4 @@ class Mission(CRUDResource):
     crew: Crew
     rocket: Rocket
     station: Station
-    launch_date: datetime.date = Field(default=datetime.date.today)
+    launch_date: datetime.date = Field(default_factory=datetime.date.today)
