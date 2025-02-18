@@ -222,6 +222,7 @@ extra:
   analytics:
     provider: posthog
     property: phc_XLaOpYPOTvcO1ubYF4mDtK9eDNiVk3ul3dcMqW4IcWx
+    host: https://d2r3huvf7ki0sy.cloudfront.net
     feedback:
       title: Was this page helpful?
       ratings:
