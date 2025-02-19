@@ -197,7 +197,7 @@ theme:
     - search.suggest
     - toc.follow
   palette:
-    - media: 'all'
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       primary: custom
       accent: amber
