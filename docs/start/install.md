@@ -75,7 +75,7 @@ And if you prefer to install Plateforme directly from the repository:
     ```bash
     pip install "git+https://github.com/plateformeio/plateforme@main"
 
-    # or with `cli` and `serve` extras:
+    # or with "cli" and "serve" extras:
     pip install "git+https://github.com/plateformeio/plateforme@main#egg=plateforme[cli,serve]"
     ```
 
@@ -84,6 +84,6 @@ And if you prefer to install Plateforme directly from the repository:
     ```bash
     uv add "git+https://github.com/plateformeio/plateforme@main"
     
-    # or with `cli` and `serve` extras:
+    # or with "cli" and "serve" extras:
     uv add "git+https://github.com/plateformeio/plateforme@main#egg=plateforme[cli,serve]"
     ```

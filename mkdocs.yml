@@ -378,14 +378,14 @@ hooks:
 
 plugins:
   - git-committers:
-      enabled: !ENV [PLUGINS_GIT, false]
+      enabled: !ENV [PLUGINS_GIT_COMMITTERS, false]
       repository: plateformeio/docs
       branch: main
       token: !ENV [GH_TOKEN, null]
   - git-revision-date-localized:
-      enabled: !ENV [PLUGINS_GIT, false]
-      type: timeago
+      enabled: !ENV [PLUGINS_GIT_DATE, false]
       enable_creation_date: true
+      type: timeago
   - macros
   - meta
   - mike:
