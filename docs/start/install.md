@@ -41,27 +41,27 @@ To install optional dependencies along with Plateforme:
 === "pip"
 
     ```bash
-    # with the `cli` extra:
-    pip install 'plateforme[cli]'
+    # with the "cli" extra:
+    pip install "plateforme[cli]"
 
-    # or with `cli` and `serve` extras:
-    pip install 'plateforme[cli,serve]'
+    # or with "cli" and "serve" extras:
+    pip install "plateforme[cli,serve]"
 
     # or with all extras:
-    pip install 'plateforme[all]'
+    pip install "plateforme[all]"
     ```
 
 === "uv"
 
     ```bash
-    # with the `cli` extra:
-    uv add 'plateforme[cli]'
+    # with the "cli" extra:
+    uv add "plateforme[cli]"
 
-    # or with `cli` and `serve` extras:
-    uv add 'plateforme[cli,serve]'
+    # or with "cli" and "serve" extras:
+    uv add "plateforme[cli,serve]"
 
     # or with all extras:
-    uv add 'plateforme[all]'
+    uv add "plateforme[all]"
     ```
 
 !!! note "You can also install requirements manually with for instance `pip install uvicorn`"
@@ -73,17 +73,17 @@ And if you prefer to install Plateforme directly from the repository:
 === "pip"
 
     ```bash
-    pip install 'git+https://github.com/plateformeio/plateforme@main'
+    pip install "git+https://github.com/plateformeio/plateforme@main"
 
     # or with `cli` and `serve` extras:
-    pip install 'git+https://github.com/plateformeio/plateforme@main#egg=plateforme[cli,serve]'
+    pip install "git+https://github.com/plateformeio/plateforme@main#egg=plateforme[cli,serve]"
     ```
 
 === "uv"
 
     ```bash
-    uv add 'git+https://github.com/plateformeio/plateforme@main'
+    uv add "git+https://github.com/plateformeio/plateforme@main"
     
     # or with `cli` and `serve` extras:
-    uv add 'git+https://github.com/plateformeio/plateforme@main#egg=plateforme[cli,serve]'
+    uv add "git+https://github.com/plateformeio/plateforme@main#egg=plateforme[cli,serve]"
     ```
