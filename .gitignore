@@ -1,4 +1,5 @@
 # System files
+private
 *.DS_Store
 
 # Logs
@@ -43,10 +44,8 @@ celerybeat-schedule
 celerybeat.pid
 
 # Environments
-.env/
+.venv
 .venv/
-env/
-env.bak/
 venv/
 venv.bak/
 *.local
