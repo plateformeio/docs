@@ -16,11 +16,11 @@ icon: octicons/tag-16
 
     ---
 
-    Version `0.1.0-a1` (Alpha)
+    Version `0.1.0-a2` (Alpha)
 
-    [:octicons-log-16:]({{ links.repo.core }}/releases/tag/0.1.0-a1)
-    [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a1.zip)
-    &nbsp;&nbsp;&nbsp;:octicons-history-16: _2025-02-15_
+    [:octicons-log-16:]({{ links.repo.core }}/releases/tags/0.1.0-a2.zip)
+    [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a2.zip)
+    &nbsp;•&nbsp;&nbsp;<small>:octicons-history-16: 2025-02-22</small>
 
 -   :fontawesome-brands-python:{ .lg .middle } **Supported versions**
 
@@ -36,7 +36,7 @@ icon: octicons/tag-16
 
 | Version | Status | Release Date | Links |
 |---------|--------|--------------|-------|
-| `0.1.0-a1` | active | 2025-02-15 | [:octicons-tag-16:]({{ links.repo.core }}/releases/tag/0.1.0-a1) [:octicons-download-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a1.zip) |
+| `0.1.0-a2` | active | 2025-02-22 | [:octicons-tag-16:]({{ links.repo.core }}/releases/tag/0.1.0-a2) [:octicons-download-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a2.zip) |
 
 Use the following command to install the latest version of Plateforme:
 
@@ -100,28 +100,55 @@ Use the following command to install the latest version of Plateforme:
 
 ### :octicons-tag-24: **`0.1`**
 
-#### :octicons-hash-24: `alpha-1`
+#### :octicons-hash-24: `alpha-2`
 
-> [:octicons-log-16:]({{ links.repo.core }}/releases/tag/0.1.0-a1)
-> [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a1.zip)
-> &nbsp;•&nbsp;&nbsp;:octicons-history-16: 2025-02-15
+> [:octicons-log-16:]({{ links.repo.core }}/releases/tag/0.1.0-a2)
+> [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a2.zip)
+> &nbsp;•&nbsp;&nbsp;<small>:octicons-history-16: 2025-02-22</small>
 
 
 === ":octicons-rocket-16: Featured"
 
-    - NA
+    - Added shell feature with enhanced namespace support as part of CLI architecture refactoring
+    - Introduced computed field support within schema definitions
+    - Added auditable resource basic implementation (work in progress)
 
 === ":octicons-tools-16: Added"
 
-    - NA
+    - Exported members utility for retrieving module exports
+    - Favicon support for docs endpoints
+    - Settings dictionary type hints
+    - Logging color support detection
+    - CLI color support checking
+    - Auto mkdir functionality for logging filenames
+    - Mutable instance configuration and dictionary
+    - Manager methods collection filtering
+    - Mutable service configuration
 
 === ":octicons-bug-16: Fixed"
 
-    - NA
+    - Refactored handling of forward references in type annotations
+    - Added deferred type serialization
+    - Disabled emoji when not UTF-8
+    - Added CLI logging offset
+    - Fixed levelname padding calculation
+    - Ensured default values for model owner
+    - Prevented passing keyword arguments to parent classes
+    - Fixed self-referencing associations
+    - Inherited correctly from base resource
 
 === ":octicons-alert-16: Breaking"
 
-    - NA
+    - Refactored after model validators to use instance methods
+    - Refactored exports of expressions and selectors
+    - Refactored packages placeholder
+    - Updated environment configuration
+
+#### :octicons-hash-24: `alpha-1`
+
+> [:octicons-log-16:]({{ links.repo.core }}/releases/tag/0.1.0-a1)
+> [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a1.zip)
+> &nbsp;•&nbsp;&nbsp;<small>:octicons-history-16: 2025-02-15</small>
 
 ---
 
