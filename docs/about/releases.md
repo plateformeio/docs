@@ -18,7 +18,7 @@ icon: octicons/tag-16
 
     Version `0.1.0-a2` (Alpha)
 
-    [:octicons-log-16:]({{ links.repo.core }}/releases/tags/0.1.0-a2.zip)
+    [:octicons-log-16:]({{ links.repo.core }}/releases/tag/0.1.0-a2)
     [:octicons-archive-16:]({{ links.repo.core }}/archive/refs/tags/0.1.0-a2.zip)
     &nbsp;•&nbsp;&nbsp;<small>:octicons-history-16: 2025-02-22</small>
 
