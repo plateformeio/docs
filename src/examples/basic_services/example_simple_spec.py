@@ -41,6 +41,7 @@ class SimpleSpecService(BaseServiceWithSpec[OrderableSpec]):
         for item in result:
             total += item.price * payload[str(item.id)]
 
+        await session.commit()
         return total
 # --8<-- [end:snippet-services]
 
